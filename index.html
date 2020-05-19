@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media.css">
+
+	<title>WebPage Template</title>
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__block">
+				<div class="header__logo">
+					<span class="logo-title">Logo</span>
+				</div>
+				<div class="header__menu">
+					<nav class="nav" id="nav">
+						<ul class="menu">
+							<li class="menu-item">
+								<a href="#header" class="menu-link">Home</a>
+							</li>
+							<li class="menu-item">
+								<a href="#about" class="menu-link">About</a>
+							</li>
+							<li class="menu-item">
+								<a href="#works" class="menu-link">Works</a>
+							</li>
+							<li class="menu-item">
+								<a href="#team" class="menu-link">Team</a>
+							</li>
+							<li class="menu-item">
+								<a href="#contacts" class="menu-link">Contacts</a>
+							</li>
+						</ul>
+						<div class="burger-menu">
+							<div class="line line1"></div>
+							<div class="line line2"></div>
+							<div class="line line3"></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="intro">
+		<div class="container">
+			<h1 class="intro__title">HTML Template</h1>
+			<small class="intro__subtitle">starter html/css/js template</small>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<h2 class="section__title">About</h2>
+			<div class="about__block">
+				<div class="about__item"></div>
+				<div class="about__item"></div>
+				<div class="about__item"></div>
+			</div>
+			<div class="about__faq">
+				<div class="faq">
+					<div class="faq__item">
+						<input type="checkbox" class="faq__check" id="q1">
+						<label for="q1" class="faq__title">Lorem, ipsum dolor sit amet consecteu?</label>
+						<div class="faq__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at reprehenderit
+								aliquid eveniet eos
+								quas. Voluptatibus, architecto nisi est accusamus ipsam commodi! Harum est asperiores
+								odit impedit
+								consectetur explicabo corporis.</p>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<input type="checkbox" class="faq__check" id="q2">
+						<label for="q2" class="faq__title">Lorem, ipsum dolor sit amet consecteu?</label>
+						<div class="faq__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at reprehenderit
+								aliquid eveniet eos
+								quas. Voluptatibus, architecto nisi est accusamus ipsam commodi! Harum est asperiores
+								odit impedit
+								consectetur explicabo corporis.</p>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<input type="checkbox" class="faq__check" id="q3">
+						<label for="q3" class="faq__title">Lorem, ipsum dolor sit amet consecteu?</label>
+						<div class="faq__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at reprehenderit
+								aliquid eveniet eos
+								quas. Voluptatibus, architecto nisi est accusamus ipsam commodi! Harum est asperiores
+								odit impedit
+								consectetur explicabo corporis.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="works" id="works">
+		<div class="container">
+			<h2 class="section__title">Works</h2>
+			<div class="filter__tabs">
+				<button class="filter__btn is-active" data-filter="all">All</button>
+				<button class="filter__btn" data-filter="design">WEB DESIGN</button>
+				<button class="filter__btn" data-filter="ux">UI/UX DESIGN</button>
+				<button class="filter__btn" data-filter="mockup">MOCKUPS</button>
+			</div>
+			<div class="works__block">
+				<div class="works__item" data-category="ux"></div>
+				<div class="works__item" data-category="mockup"></div>
+				<div class="works__item" data-category="design"></div>
+
+				<div class="works__item" data-category="design"></div>
+				<div class="works__item" data-category="ux"></div>
+				<div class="works__item" data-category="design"></div>
+
+				<div class="works__item" data-category="mockup"></div>
+				<div class="works__item" data-category="design"></div>
+				<div class="works__item" data-category="mockup"></div>
+			</div>
+
+			<!-- Single Slider -->
+			<h2 class="section__title">Popular Works</h2>
+			<div class="popular-block">
+				<div class="left-arrow prev" id="left-arrow"></div>
+				<div class="right-arrow prev" id="right-arrow"></div>
+				<div class="popular-item active">
+					<div class="item-content">1</div>
+				</div>
+				<div class="popular-item">
+					<div class="item-content">2</div>
+				</div>
+				<div class="popular-item">
+					<div class="item-content">3</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team" id="team">
+		<div class="container">
+			<h2 class="section__title">Team</h2>
+			<div class="team__block">
+				<div class="team__item"></div>
+				<div class="team__item"></div>
+				<div class="team__item"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts" id="contacts">
+		<h2 class="section__title">Contacts</h2>
+		<div class="contact-btn" data-popup="popup-send">Send message</div>
+	</section>
+
+	<div class="popup popup-send">
+		<div class="popup__wrapper">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="close-btn popup__close-btn popup__close" type="button"></button>
+					<h2 class="section__title">Send message</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="to-top"></div>
+	<footer id="footer">
+		<div class="container">
+			<div class="copyright">2020 | Portfolio site by <a class="author" href="https://vk.com/mamikonarsvk/"
+					target="_blank">Mamikon</a></div>
+		</div>
+	</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
